@@ -1,0 +1,193 @@
+/* =========================================================
+    PALETTE & VARIABILI GLOBALI
+   ========================================================= */
+:root {
+    --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --primary-color: #667eea;
+
+    --accent-gradient: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+    --accent-color: #48bb78;
+
+    --bg-light: #ffffff;
+    --text-dark: #2d3748;
+
+    --border-color: #e2e8f0;
+    --hover-row: #edf2f7;
+    --even-row: #f7fafc;
+
+    --transition-default: 0.3s ease;
+}
+
+/* =========================================================
+    BODY & LAYOUT
+   ========================================================= */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--primary-gradient);
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: var(--bg-light);
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    transition: transform var(--transition-default);
+}
+
+.container:hover {
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+    TITOLI
+   ========================================================= */
+h1 {
+    color: var(--text-dark);
+    font-size: 2.1em;
+    margin-bottom: 20px;
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+/* =========================================================
+   BOTTONI
+   ========================================================= */
+a.button, .buttonSave, button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px 5px 10px 0;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition-default);
+}
+
+/* Bottoni viola */
+a.button {
+    background: var(--primary-gradient);
+    box-shadow: 0 4px 6px rgba(102, 126, 234, 0.3);
+}
+
+a.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(102, 126, 234, 0.5);
+}
+
+/* Bottoni verdi (salva) */
+.buttonSave, button[type="submit"] {
+    background: var(--accent-gradient);
+    border: none;
+    box-shadow: 0 4px 6px rgba(72, 187, 120, 0.3);
+}
+
+.buttonSave:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(72, 187, 120, 0.4);
+    background: linear-gradient(135deg, #38a169 0%, #2f855a 100%);
+}
+
+/* =========================================================
+   TABELLE
+   ========================================================= */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+table th {
+    background: var(--primary-gradient);
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 12px;
+    font-size: 0.9em;
+}
+
+table td {
+    padding: 12px;
+    border: 1px solid var(--border-color);
+}
+
+tr:nth-child(even) {
+    background-color: var(--even-row);
+}
+
+tr:hover {
+    background-color: var(--hover-row);
+    transition: var(--transition-default);
+}
+
+/* Icone azioni */
+.actions a {
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: transform 0.2s;
+    display: inline-block;
+}
+
+.actions a:hover {
+    transform: scale(1.08);
+}
+
+/* =========================================================
+    FORM
+   ========================================================= */
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 1em;
+    transition: var(--transition-default);
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+select {
+    cursor: pointer;
+    background-color: white;
+}
+
+/* =========================================================
+    RESPONSIVE
+   ========================================================= */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.7em;
+    }
+
+    table th, table td {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
