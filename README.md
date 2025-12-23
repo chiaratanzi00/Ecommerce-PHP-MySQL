@@ -1,50 +1,23 @@
-# 🛒 Ecommerce PHP & MySQL – Gestione Contatti e Ordini
+# E-Commerce – Web Application Full Stack (PHP & MySQL)
 
-Applicazione web per la gestione di contatti (clienti) e ordini, sviluppata con **PHP**, **MySQL**, **HTML5**, **CSS3**.  
-Il progetto include funzionalità CRUD complete, gestione relazioni contatto-ordine, validazioni, interfaccia semplice e intuitiva, e utilizzo di **Prepared Statements** per sicurezza.  
-
-*Progetto realizzato durante il Corso Full Stack Developer – 2025.*
-
----
-
-
-## Descrizione del progetto
-
-Questa applicazione permette di:
-
-- Creare, leggere, modificare ed eliminare **contatti**.  
-- Associare a ciascun contatto **ordini** con controlli su quantità, data, campi obbligatori.  
-- Gestire **ordini**: creazione, modifica, eliminazione, visualizzazione.  
-- Visualizzare la lista completa di contatti e relativi ordini, con possibilità di filtraggio per ID contatto.  
-- Interfaccia utente semplice, con icone intuitive per modificare, eliminare, creare nuovi ordini.  
-
-L’obiettivo è dimostrare competenze full-stack di base: gestione database, relazioni tabelle, operazioni CRUD, sicurezza, interfaccia web.
+Applicazione web full stack sviluppata in PHP e MySQL per la gestione di contatti (clienti) e ordini.
+L’applicazione implementa operazioni CRUD complete, gestione delle relazioni tra tabelle e validazioni lato server, con particolare attenzione alla sicurezza tramite prepared statements.
 
 
 ---
 
 
-## Funzionalità principali
+## Funzionalità 
 
-### Gestione Contatti
-
-- Visualizzazione di tutti i contatti  
-- Aggiunta di un nuovo contatto  
-- Modifica di un contatto esistente  
-- Eliminazione di un contatto  
-
-### Gestione Ordini
-
-- Creazione di ordini associati a un contatto  
-- Validazioni su quantità, date e campi obbligatori  
-- Modifica e aggiornamento ordini  
-- Eliminazione di ordini  
-- Visualizzazione lista ordini filtrabile per contatto  
-
----
+- Gestione completa dei contatti (creazione, modifica, eliminazione, visualizzazione)
+- Gestione degli ordini associati ai contatti
+- Relazione uno-a-molti tra contatti e ordini
+- Validazioni su campi obbligatori, quantità e date
+- Operazioni CRUD complete
+- Interfaccia semplice e responsive
 
 
-## 📸 Screenshot dell’applicazione
+## Screenshot 
 
 ![Screenshot1](./images/screenshot1.png)   
 
@@ -59,22 +32,10 @@ L’obiettivo è dimostrare competenze full-stack di base: gestione database, re
 ![Screenshot6](./images/screenshot6.png) 
 
 
----
-
-
 ## Tecnologie utilizzate
-- PHP 8 
-- MySQL (phpMyAdmin)
-- HTML5  
-- CSS3 (UI personalizzata) 
-- XAMPP (Apache + MySQL)
-- Visual Studio Code
-- GitHub + Git
 
-
---- 
-
-
-## 👩‍💻 Autrice 
-
-**Chiara Tanzi**
+- PHP
+- MySQL
+- HTML5
+- CSS3
+- Bootstrap
